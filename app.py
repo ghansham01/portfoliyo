@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 # Load environment variables
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
 
 # Move your static files (CSS, JS, images) to a 'static' folder
 # Move your HTML file to a 'templates' folder and rename it to index.html
