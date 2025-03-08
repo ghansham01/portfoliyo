@@ -117,7 +117,26 @@ document.addEventListener('DOMContentLoaded', function () {
     if (contactForm) {
         contactForm.addEventListener('submit', async function (e) {
             e.preventDefault();
-            // ... rest of your contact form code ...
+            
+            try {
+                const formData = new FormData(this);
+                const response = await fetch('/send_message', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.status === 'success') {
+                    alert('Message sent successfully!');
+                    this.reset();
+                } else {
+                    alert('Failed to send message. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again later.');
+            }
         });
     }
 });
