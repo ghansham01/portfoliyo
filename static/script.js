@@ -62,29 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
         type();
     }
 
-    // ===== FAQ ACCORDION =====
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    if (faqQuestions.length > 0) {
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                const isActive = faqItem.classList.contains('active');
-
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    item.classList.remove('active');
-                    const toggle = item.querySelector('.toggle-icon i');
-                    if (toggle) toggle.className = 'bx bx-chevron-down';
-                });
-
-                if (!isActive) {
-                    faqItem.classList.add('active');
-                    const toggle = question.querySelector('.toggle-icon i');
-                    if (toggle) toggle.className = 'bx bx-chevron-up';
-                }
-            });
-        });
-    }
-
+    
     // ===== MOBILE MENU =====
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const sidebar = document.querySelector('.sidebar');

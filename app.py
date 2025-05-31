@@ -1,17 +1,13 @@
 from flask import Flask, render_template, request, jsonify
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# Load environment variables
-load_dotenv()
 
 app = Flask(__name__, template_folder='template')
 
-# Move your static files (CSS, JS, images) to a 'static' folder
-# Move your HTML file to a 'templates' folder and rename it to index.html
 
 @app.route('/')
 def home():
