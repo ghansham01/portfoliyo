@@ -1,4 +1,20 @@
-/assets
-/images
-/.venv
-/.images
+# Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Image directories
+assets/
+images/
+.images/
+static/images/
+
+# Environment variables
+
+# IDE specific files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
