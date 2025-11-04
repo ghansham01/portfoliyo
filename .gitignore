@@ -10,7 +10,7 @@ images/
 static/images/
 
 # Environment variables
-
+/.env
 # IDE specific files
 .vscode/
 .idea/
