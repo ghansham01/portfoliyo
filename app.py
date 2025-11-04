@@ -26,7 +26,7 @@ def send_message():
         smtp_port = 587
         sender_email = os.getenv('EMAIL_USER')  # Your Gmail address
         sender_password = os.getenv('EMAIL_PASSWORD')  # Your Gmail app password
-        receiver_email = "your-email@example.com"  # Where you want to receive messages
+        receiver_email = ""  # Where you want to receive messages
 
         # Create message
         msg = MIMEMultipart()

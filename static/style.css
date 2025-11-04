@@ -64,7 +64,22 @@ body {
 
 /* Logo Styles */
 .logo {
-    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    max-width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    object-fit: cover;
+    background: #f5f5f5;
+    padding: 8px;
 }
 
 .logo h1 {
