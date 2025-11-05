@@ -83,10 +83,7 @@ portfolio/
 │   └── images/        # Image assets
 │
 ├── template/          # HTML templates
-│   ├── index.html    # Main portfolio page
-│   └── includes/     # Reusable template parts
-│
-└── assets/           # Project assets and resources
+│   └── index.html     
 ```
 
 ## ⚡ Quick Start Guide
@@ -121,9 +118,6 @@ portfolio/
 4. Push to branch: `git push origin feature/AmazingFeature`
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🐛 Troubleshooting
 
@@ -136,9 +130,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   - Clear browser cache
   - Check CSS file paths
   - Verify responsive breakpoints
-
-## 📫 Contact
-
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
-Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
